@@ -9,28 +9,67 @@
   <title>Frontend Mentor | 3-column preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution {
+      position: relative;
+      top: -40px;
+      font-size: 11px;
+      text-align: center;
+    }
+
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-  
-  Sedans
-  Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
-  or on your next road trip.
-
-  SUVs
-  Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
-  and off-road adventures.
-
-  Luxury
-  Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
-  rental and arrive in style.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main id="main">
+    <div class="container">
+      <div class="card">
+        <section class="box box-1">
+          <div class="img-area">
+            <img src="./images/icon-sedans.svg" alt="sedan">
+          </div>
+          <h1>SEDANS</h1>
+          <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+          or on your next road trip.</p>
+          <div class="btn-box">
+            <button class="btn">
+              <h3>Learn More</h3>
+            </button>
+          </div>
+        </section>
+        <section class="box box-2">
+          <div class="img-area">
+            <img src="./images/icon-suvs.svg" alt="suv">
+          </div>
+          <h1>SUVS</h1>
+          <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+          and off-road adventures.</p>
+          <div class="btn-box">  
+            <button class="btn">
+              <h3>Learn More</h3>
+            </button>
+          </div>
+        </section>
+        <section class="box box-3">
+          <div class="img-area">
+            <img src="./images/icon-luxury.svg" alt="luxury">
+          </div>
+          <h1>LUXURY</h1>
+          <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+          rental and arrive in style.</p>  
+          <div class="btn-box">
+            <button class="btn">
+              <h3>Learn More</h3>
+            </button>
+          </div>
+        </section>
+        </div>
+    </div>
+    <div class="attribution">
+      <h3>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/yeet-yeet-4-real">Nathan Lloyd</a></h3>.
+    </div>
+  </main>
 </body>
 </html>
