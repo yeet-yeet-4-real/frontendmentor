@@ -7,90 +7,111 @@
     box-sizing: border-box;
 }
 
-h1 {
-    font-size: 40px;
-    letter-spacing: 1px;
-    font-family: 'Big Shoulders Display', sans-serif;
-    font-weight: 700;
-    padding: 20px 0;
+body {
+    padding: 10px;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
     border-radius: 10px;
-}
-
-.card {
-    color: #ffffff;
-    margin: auto;
-    display: grid;
-    border-radius: 10px;
+    width: 70%;
+    background-color: #ccc;
     overflow: hidden;
-    max-width: 65%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
 }
 
-.card > section {
-    padding: 0 50px;
+@media only screen and (min-width: 786px) {
+    body {
+        display: flex;
+        align-items: center;
+    }
+
+    .container {
+        display: grid;
+        grid-template: 1fr / 1fr 1fr 1fr;
+    }
+}
+
+.grid {
     text-align: left;
-    letter-spacing: 1;
+    padding: 40px;
+    word-spacing: 1px;
 }
 
-.card .box p {
+.grid h1 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-bottom: 5%;
+    color: hsl(0, 0%, 95%);
+}
+
+.grid p {
     color: hsla(0, 0%, 100%, 0.75);
     font-family: 'Lexend Deca', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
     line-height: 1.6;
-    word-spacing: 3.7;
+    font-size: 15px;
 }
 
-.box-1 {
-    grid-template-columns: 33%;
+.grid-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
     background-color: hsl(31, 77%, 52%);
 }
 
-.box-1 .btn {
-    color: hsl(31, 77%, 52%);
-}
-
-.box-2 {
-    grid-template-columns: 33%;
+.grid-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
     background-color: hsl(184, 100%, 22%);
 }
 
-.box-2 .btn {
-    color: hsl(184, 100%, 22%);
-}
-
-
-.box-3 {
-    grid-template-columns: 33%;
+.grid-3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
     background-color: hsl(179, 100%, 13%);
 }
 
-.box-3 .btn {
+.img-section {
+    padding: 20px 0;
+}
+
+.attribution {
+    padding: 40px;
+}
+
+.btn-section {
+    height: 100px;
+}
+
+.btn {
+    background-color: #ffffff;
+    font-family: 'Lexend Deca', sans-serif;
+    position: relative;
+    top: 50%;
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: none;
+    font-weight: 400;
+}
+
+.btn-1 {
+    color: hsl(31, 77%, 52%);
+}
+
+.btn-2 {
+    color: hsl(184, 100%, 22%);
+}
+
+.btn-3 {
     color: hsl(179, 100%, 13%);
 }
 
-
-.img-area {
-    margin-top: 30px;
-}
-
-.btn-box {
-    height: 150px;
-}
-
-.btn-box .btn {
-    font-family: 'Lexend Deca', sans-serif;
-    border: none;
-    padding: 10px 25px;
-    background-color: #ffffff;
-    border-radius: 30px;
-    position: relative;
-    top: 40%;
-}
